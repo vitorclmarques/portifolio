@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family= Krona +One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+
+:root{
+    --cor-primaria: #2C3333;
+    --cor-secundaria:#CBE4DE;
+    --cor-houver :#2E4F4F;
+    --cor-terciaria:#0E8388;
+ 
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif ;
+}
+
+*{
+   /* margem da pagina */
+    margin :0;
+    padding:0;
+}
+
+
+body {
+    /*Ocupação da pagina  */
+    /* height: 100vh; */
+    box-sizing: border-box;
+    /*cor do plano de fundo */
+    background-color: var(--cor-primaria);
+    /* mudando cor do texto */
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0 0 10%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap:80px;
+}
+.cabecalho__menu__link{
+     font-family: var(--fonte-secundaria);
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.destaqueTitulo{
+    /* estilizando texto */
+    color: var(--cor-terciaria);
+}
+/* mudando o layout */
+.apresentacao{
+     padding: 5% 10%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;    
+}
+/* Mudando a fonte e o tamnaho da fonte */
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    /* font-family: 'Sono', sans-serif; */
+    
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.aprensentacao__links{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.aprensentacao__links__subtitulo{
+    font-family:var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.icon__apresentacao{
+    height: 32px;
+    width: 32px ;
+    gap :16px;
+}
+.aprensentacao__links__navegacao{
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8 px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration-line: none;
+}
+.aprensentacao__links__link:hover{
+    background-color:var(--cor-houver);
+    color: var(--cor-terciaria);
+    padding: 3%s;
+    
+}
+
+.apresentacao__imagem{
+    /* apresentação de acordo com o tamanho do aparelho */
+     /* width: 50%; 
+    height: 50%; */
+    width: 450px; 
+     height: 550px;
+    
+} 
+.rodape{
+    color : var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.aprensentacao__link__certificado{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+@media (max-width: 1200px){
+    
+    .cabecalho{
+        padding: 6%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto ;
+    }
+}
+
